@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="WeatherPortal.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeatherPortal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.TopAppBar>
+        <AppBar Background="Green" BorderBrush="Yellow">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="City 1 - to make prettier" Background="OrangeRed"></Button>
+                <Button Content="City 2 - to make prettier" Background="OrangeRed"></Button>
+                <Button Content="City 3 - to make prettier" Background="OrangeRed"></Button>
+
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+
+    <Page.BottomAppBar>
+        <CommandBar Background ="Green" BorderBrush="Yellow">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="Refresh" Icon="Sync"></AppBarButton>
+            </CommandBar.PrimaryCommands>
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="More" Icon="More"></AppBarButton>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='1' x:Name="button" Content="Get Data" HorizontalAlignment="Left" Margin="422,90,0,0" VerticalAlignment="Top"                     />
+        <TextBlock x:Name="textBlock123" HorizontalAlignment="Left" Margin="153,258,0,0" TextWrapping="Wrap" Text="This is the textbox" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="817,239,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>London</ComboBoxItem>
+            <ComboBoxItem>Hamilton</ComboBoxItem>
+            <ComboBoxItem>Waterloo</ComboBoxItem>
+        </ComboBox>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="48" Margin="170,188,0,0" VerticalAlignment="Top" Width="48"/>
+
+    </Grid>
+
+
+</Page>
+

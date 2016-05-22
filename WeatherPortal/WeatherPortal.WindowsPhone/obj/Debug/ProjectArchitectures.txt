@@ -1,0 +1,1 @@
+c:\users\pechow\documents\visual studio 2015\Projects\WeatherPortal\WeatherPortal\WeatherPortal.WindowsPhone\WeatherPortal.WindowsPhone.csproj;neutral
