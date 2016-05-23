@@ -89,10 +89,9 @@ namespace WeatherPortal
             string value = typeItem.Content.ToString();
             cityId = CityID(value);
             string[] weatherInfo = await RunAsync(cityId);
-
+            cityNameTB.Text = weatherInfo[0];
             //
-            textBlock123.Text = weatherInfo[0]
-                + "Minmum Temperature: "+weatherInfo[1] + "\n"
+            textBlock123.Text = "Minimum Temperature: "+weatherInfo[1] + "\n"
                 + "Max Temperature: "+weatherInfo[2] + "\n"
                 + "Wind speed: " + weatherInfo[3] + "\n"
                 + "Wind degree: " + weatherInfo[4] + "\n"
